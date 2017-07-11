@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home';
-import { AboutComponent } from './about';
-import { NoContentComponent } from './no-content';
+import { HomeComponent } from './components/home';
+import { AboutComponent } from './components/about';
+import { NoContentComponent } from './components/no-content';
 
 import { DataResolver } from './app.resolver';
 
@@ -13,9 +13,11 @@ export const ROUTES: Routes = [
   { path: 'about',
     component: AboutComponent },
   { path: 'detail',
-    loadChildren: './+detail#DetailModule'},
+    loadChildren: './components/+detail#DetailModule'},
   { path: 'barrel',
-    loadChildren: './+barrel#BarrelModule'},
+    loadChildren: './components/+barrel#BarrelModule'},
+  { path: 'configurator',
+    loadChildren: './components/+configurator#ConfiguratorModule'},
   { path: '**',
     component: NoContentComponent },
 ];

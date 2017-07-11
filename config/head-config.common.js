@@ -49,5 +49,9 @@ module.exports = {
     { name: 'msapplication-TileColor', content: '#00bcd4' },
     { name: 'msapplication-TileImage', content: '/assets/icon/ms-icon-144x144.png', '=content': true },
     { name: 'theme-color', content: '#00bcd4' }
+  ],
+  script: [
+    {src: "/assets/libs/three/three.js"},
+    {src: "/assets/libs/three/controls/three.orbit.js"},
   ]
 };
